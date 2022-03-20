@@ -3,47 +3,110 @@
 
 <head>
   <meta charset="utf-8">
-  <title>💙My Web Site</title>
+  <title>Chris Bowe Portfolio Site</title>
+  <!--EXTERNAL CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+<!--INTERNAL CSS-->
+<!-- Using internal CSS to style html -->
+<!-- Note: for some elements, defauly CSS stylings may apply
+(e.g., <hr> has inset border-style as default). In such cases, changing just one
+element (e.g., background colour for <hr>) may not show changes if the default CSS
+is applying a style that stops that change being displayed.  Therefore other elements
+may also need changing to supersede the default CSS stylings (again in the case
+of <hr> this might be changing the border-style to none.)
+Something to be aware of though is that changing one element might affect the
+item in another way.  E.g., chaning <hr> border-style to none means the hr element
+will no longer display (as the default border is 1px), by removing the border (to none)
+ the hr element becomes 0px so does not display.  Hence, the height of the hr element
+ will then need to be set.) -->
+<!--<style media="screen">
+
+  body {
+    background-color: #EAF6F6;
+  }
+  hr {
+    border-style: dotted none none;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+  }
+</style>
+-->
 </head>
 
-<body>
+<!--Using in-line CSS to change something (in this case background colour)
+<body style="background-color: #EAF6F6;">
+-->
 
+<body>
   <table>
     <tr>
-      <td><img src="Images/Mario.jpg" alt="My profile picture"></td>
+      <td><img src="images/profile3.jpg" alt="My profile picture"></td>
       <td>
-        <h1>💕hello world💕</h1>
-        <h1>First Name Surname</h1>
-        <p><i>Novice</i> <b>developer</b></p>
+        <h1>Chris Bowe</h1>
+        <h2>Handsome, charming, polite, outgoing and rich.</h2>
+        <p><b><i>Well, at least 20% of that is true anyway!</b></i></p>
       </td>
     </tr>
   </table>
 
-  <p>I am an ageing novice developer learning a multitude of languages and
-    coding skills, though none to any great or useful extent it seems!</p>
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>Infant</li>
-    <li>Junior</li>
-    <li>Comprehensive</li>
-    <li>College
-      <ul>
-        <li>sixth form</li>
-      </ul>
-    </li>
-    <li>University
-      <ul>
-        <li>Of Life (mad lolz, not)</li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <p>Not a lot really in terms of coding :D</p>
+  <p>Gamer, novice web developer, dabbler.</p>
+  <p>Undertaking small website developments for local clubs, charities etc.
+    Small (or even no) fees applicable.</p>
+  <p>Founder of <a href="https://chriscsi75.github.io/">Rainbowe
+    Developments</a></p>
   <hr>
 
-  <h3>Skills</h3>
+  <h3>Education</h3>
+  <ul>
+    <li><b>Hummersknott Comprehensive</b></li>
+    <ul>
+      <li>A range of GCSE grades C and above ranging from Maths to English to
+      Science.</li>
+    </ul>
+    <li><b>Queen Elizabeth Sixth Form College</b></li>
+      <ul>
+        <li>3 A-Levels in Physics, Chemsistry and Biology</li>
+      </ul>
+    <li><b>University of Teesside</b></li>
+      <ul>
+        <li>BSc Honours Degree - Applied Science and Forensic Investigation</li>
+        <li>UCPD - Crime Scene Photography</li>
+      </ul>
+  </ul>
+  <hr>
+
+  <h3>Work Experience</h3>
+  <table border=1>
+    <thead>
+      <th>Year(s)</th>
+      <th>Employment</th>
+      <th>Role(s)</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1998 - 2005</td>
+        <td>Safeway</td>
+        <td>Coffee Shop, Assistant Manager (Department)</td>
+      </tr>
+      <tr>
+        <td>2005 - 2010</td>
+        <td>Barclays</td>
+        <td>Cashier, Customer Serive Adviser, Assistant Counter Manager,
+          Counter Manager</td>
+      </tr>
+      <tr>
+        <td>2010 - Present</td>
+        <td>Student Finance England</td>
+        <td>Processor, DSA Adviser, DSA Officer, Continuous Improvement
+         Specialist, LEAN Engagement</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+
+  <h3>Programming Skills</h3>
   <!--<table border="1">
     <tr>
       <td>
@@ -76,16 +139,16 @@
 
   <table cellspacing="10">
     <tr>
+      <td>Basic Web Development</td>
+      <td>⭐⭐☆☆☆</td>
       <td>Javascript</td>
-      <td>⭐⭐⭐⭐⭐</td>
-      <td>Python</td>
-      <td>⭐⭐⭐⭐⭐</td>
+      <td>⭐⭐☆☆☆</td>
     </tr>
     <tr>
+      <td>Python</td>
+      <td>⭐⭐☆☆☆</td>
       <td>C#</td>
-      <td>⭐⭐⭐⭐⭐</td>
-      <td>Web Development</td>
-      <td>⭐⭐⭐⭐⭐</td>
+      <td>⭐☆☆☆☆</td>
     </tr>
   </table>
 
