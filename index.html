@@ -3,159 +3,203 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Chris Bowe Portfolio Site</title>
-  <!--EXTERNAL CSS-->
-  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Memoriam - Garry Hewitt</title>
 
-<!--INTERNAL CSS-->
-<!-- Using internal CSS to style html -->
-<!-- Note: for some elements, defauly CSS stylings may apply
-(e.g., <hr> has inset border-style as default). In such cases, changing just one
-element (e.g., background colour for <hr>) may not show changes if the default CSS
-is applying a style that stops that change being displayed.  Therefore other elements
-may also need changing to supersede the default CSS stylings (again in the case
-of <hr> this might be changing the border-style to none.)
-Something to be aware of though is that changing one element might affect the
-item in another way.  E.g., chaning <hr> border-style to none means the hr element
-will no longer display (as the default border is 1px), by removing the border (to none)
- the hr element becomes 0px so does not display.  Hence, the height of the hr element
- will then need to be set.) -->
-<!--<style media="screen">
+  <!--Bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-  body {
-    background-color: #EAF6F6;
-  }
-  hr {
-    border-style: dotted none none;
-    border-color: grey;
-    border-width: 5px;
-    width: 5%;
-  }
-</style>
--->
+  <!-- My Style sheet -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8b225d6bcb.js" crossorigin="anonymous"></script>
+
+  <!--Favicon-->
+  <!--<link rel="icon" href="favicon.ico">-->
+
+  <!--Googlefonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Javascript scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 </head>
 
-<!--Using in-line CSS to change something (in this case background colour)
-<body style="background-color: #EAF6F6;">
--->
-
 <body>
-  <table>
-    <tr>
-      <td><img src="Images/profile3.jpg" alt="My profile picture"></td>
-      <td>
-        <h1>Chris Bowe</h1>
-        <h2>Handsome, charming, polite, outgoing and rich.</h2>
-        <p><b><i>Well, at least 20% of that is true anyway!</b></i></p>
-      </td>
-    </tr>
-  </table>
 
-  <p>Gamer, novice web developer, dabbler.</p>
-  <p>Undertaking small website developments for local clubs, charities etc.
-    Small (or even no) fees applicable.</p>
-  <p>Founder of <a href="https://chriscsi75.github.io/">Rainbowe
-    Developments</a></p>
-  <hr>
+  <section class="coloured-section" id="title">
 
-  <h3>Education</h3>
-  <ul>
-    <li><b>Hummersknott Comprehensive</b></li>
-    <ul>
-      <li>A range of GCSE grades C and above ranging from Maths to English to
-      Science.</li>
-    </ul>
-    <li><b>Queen Elizabeth Sixth Form College</b></li>
-      <ul>
-        <li>3 A-Levels in Physics, Chemsistry and Biology</li>
-      </ul>
-    <li><b>University of Teesside</b></li>
-      <ul>
-        <li>BSc Honours Degree - Applied Science and Forensic Investigation</li>
-        <li>UCPD - Crime Scene Photography</li>
-      </ul>
-  </ul>
-  <hr>
+    <div class="container-fluid">
 
-  <h3>Work Experience</h3>
-  <table border=1>
-    <thead>
-      <th>Year(s)</th>
-      <th>Employment</th>
-      <th>Role(s)</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1998 - 2005</td>
-        <td>Safeway</td>
-        <td>Coffee Shop, Assistant Manager (Department)</td>
-      </tr>
-      <tr>
-        <td>2005 - 2010</td>
-        <td>Barclays</td>
-        <td>Cashier, Customer Serive Adviser, Assistant Counter Manager,
-          Counter Manager</td>
-      </tr>
-      <tr>
-        <td>2010 - Present</td>
-        <td>Student Finance England</td>
-        <td>Processor, DSA Adviser, DSA Officer, Continuous Improvement
-         Specialist, LEAN Engagement</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
 
-  <h3>Programming Skills</h3>
-  <!--<table border="1">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Javascript</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>C#</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Web Development</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
--->
+        <!-- <a class="navbar-brand" href="#Garry">Garry</a> -->
 
-  <table cellspacing="10">
-    <tr>
-      <td>Basic Web Development</td>
-      <td>⭐⭐☆☆☆</td>
-      <td>Javascript</td>
-      <td>⭐⭐☆☆☆</td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td>⭐⭐☆☆☆</td>
-      <td>C#</td>
-      <td>⭐☆☆☆☆</td>
-    </tr>
-  </table>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <hr>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#Life">Life</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="art.html">Art</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.whitehousefuneralservice.co.uk/wh/announcements/view?id=8205" target="_blank">Funeral</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Donate">Donate</a></li>
+          </ul>
+        </div>
 
-  <a href="hobbies.html">My Hobbies</a>
-  <a href="contact.html">Get in touch</a>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Garry Hewitt</h1>
+          <br>
+          <h2 class="title-heading">Loving husband, brother, father and grandad</h2>
+          <h3 class="title-sub">1952 - 2022</h3>
+          <br>
+          <a href="images/garry-1.jpg" target="_blank"><img class="garry-profile-pic" src="images/DSCF0085.jpg" alt="Image of Garry Hewitt"></a>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- <h2 class="title-text">Fondly remembered, always</h2> -->
+          <p class="">Whether family or friend, no matter where you knew Garry from he was invariably loved, respected and was somehow able to effortlessly put a
+            smile on your face. No-one could find the words to describe the void that has been left in so many people's lives
+            following his loss. <br><br>
+            From chess to rugby, cop shops to kitchens and pub to, well, pub, it seems no matter where you go there will
+            be someone who knows Garry and will have tales to tell.<br><br>
+            By his wife, son, daughter and brother, the rest of his family, his close friends in the chess club, the CAMRA circuit, the police service and
+            many more besides, he will forever be remembered as a kind, generous and funny man, one of the true great people in the world and
+            another who was taken too soon. <br><br>
+            Rest in peace Garry, have a drink for us.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+
+  <section class="grey-section" id="Life">
+
+    <div id="life-carousel" class="carousel slide" data-ride="false">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active container-fluid">
+          <a href="images/marriage.jpg" target="_blank"><img class="life-pic-left" src="images/marriage.jpg" alt="A family picture"></a>
+          <h3 class="life-text">Family</h3>
+          <p>Married to Denise, his wife of [XX] years, Garry was a loving and extremely proud father of two children: Adrian and Nadine.
+            Garry was a family man and loved his family and was especially proud of his children and grandchildren Jasper, Finley and
+            Erika. <br>
+            One of three brothers, Garry is survived by Cliff, having lost Dean several years ago. <br>
+            Garry has always been proud of his family and loved his mum, Bette, very much. He always enjoyed sharing tales of his
+            childhood in Whitchurch and that is a place that was, along with the north east, close to his heart.
+          </p>
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="images/rugby.jpg" target="_blank"><img class="life-pic-right" src="images/rugby.jpg" alt="An image representing rugby"></a>
+          <h3 "life-text">Rugby</h3>
+          <p>Garry grew up with a love of many sports, but Rugby was a particular passion. <br>
+            Playing since school, he was a great player and loved his time with the Darlington Colts, later helping
+            train and to manage the accounts as secretary. A love for Rugby that continued long after he stopped playing,
+            this was something Garry was always passionate about. </p>
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="images/garry-police.jpg" target="_blank"><img class="life-pic-left" src="images/garry-police.jpg" alt="An image of Garry in police uniform"></a>
+          <h3 "life-text">Police</h3>
+          <p>Joining the Police Service in [19XX], Garry rose up to become a Sergeant in the Durham Constabulary. This was
+            a career he was exteremley proud of and highly passionate about. He took his role serioulsy and always liked
+            sharing tales of his time in the service. Many have memories of working with Garry, or being mentored by him, and
+            they are always tales of a good man, helping people and always having time for others. A shining example of a good
+            man doing a good job and leaving a lasting legacy and fond memories for those he worked with.</p>
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="images/2garry-chess.jpg" target="_blank"><img class="life-pic-right" src="images/2garry-chess.jpg" alt="An image representing chess"></a>
+          <h3 class="life-text">Chess</h3>
+          <p>As with Rugby, chess was another of Garry's life-long passions. A rather proficient player, when he was
+            on form he would give people the most challenging of games. A keen student of the game, his bookshelves would
+            frequently be buckling under the weight of various tomes (some in Russian which to this day we mantain he only ever
+            looked at the pictures!) about the strategies to be employed in his matches. A long-standing member and vocal
+            supporter of the local chess club, especially his work as secretary to promote an uptake of chess in the younger
+            generations, his loss will be keenly felt by the club, their associates and the wider chess community.</p>
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="images/FB_IMG_1648291516708.jpg" target="_blank"><img class="life-pic-left" src="images/FB_IMG_1648291516708.jpg" alt="An image representing music"></a>
+          <h3 "life-text">Music</h3>
+          <p>Everyone who knew Garry knew of his love for music, especially rock. With a music magazine collection
+            that easily outweighed the mighty library of chess books adorning his study walls he had an amazing appreciation
+            for music and a wide and varied collection of artists. But it wasn't just rock, you could talk to Garry about
+            anyone from Joe Bonomassa to Eric Clapton and literally everythign in between and he'd know albums and songs and
+            trivia galore. Of course, it wasn't jsut what he listened to, his love of music was evident in the acts at the
+            Quakerhouse and other live venues and the Darlington Ryhthm n Brews festivals was a great way to mix two of Garry's
+            favourite pasttimes into one, and the next event will be missing one it's biggest fans.</p>
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="images/DSCF0011.jpg" target="_blank"><img class="life-pic-right" src="images/DSCF0011.jpg" alt="An image representing retirement"></a>
+          <h3 "life-text">Retirement</h3>
+          <p>Garry didn't waste much time after retiring from the police service and shorty made a joint venture
+            to co-purchase a pub in town, the Quakerhouse. Well known for being a go-to place for chat, laughs and
+            live music, the Quakerhouse had long been a passion of Garry's and he relished the chance to manage it.
+            After later selling his share Garry continued to frequent the venue. <br>
+            Outside of that social circle he continued playing Chess, being the Secretary for the chess club and was a
+            loving and caring father and grandad and enjoyed some great family holidays, which are treasured memories for
+            those who survive him. <br>
+            Garry also took up painting again and some of his amazing work can be seen <a href="art.html">here</a>.</p>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#life-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#life-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="coloured-section" id="Donate">
+
+    <div class="container-fluid fundraiser">
+      <h2 class="donate-title">Fundraising in memory of Garry</h2>
+      <h3 class="donate-message">We'd like to help raise some money, in memory of Garry, to aid Cancer Research UK</h3>
+      <p>If you could contribute, however small, to this collection it will go some way to help others
+        affected by this horrible illness. With our sincere thanks in advance.</p>
+      <a class="btn" href="https://www.cancerresearchuk.org/" target="_blank">DONATE HERE</a>
+    </div>
+
+  </section>
+
+
+  <section class="grey-section">
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.bereavementadvice.org/" target="_blank">Free Bereavement Advice</a>
+      <a class="footer-link" href="https://en-gb.facebook.com/groups/167216543772174/" target="_blank">Darlington & District Chess Club</a>
+      <a class="footer-link" href="https://www.cancerresearchuk.org/" target="_blank">Cancer Research</a>
+      <br>
+      <p class="copyright">© 2022 Chris Bowe.</p>
+    </div>
+
+  </section>
 
 </body>
 
