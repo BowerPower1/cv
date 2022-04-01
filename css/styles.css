@@ -111,18 +111,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* DONATE Section */
-.donate-title {
+/* DONATE and Stories Sections */
+.donate-title, .stories-title {
   font-size: 3.5rem;
   margin-bottom: 4%;
 }
 
-.donate-message {
+.donate-message, .stories-message {
   font-size: 2rem;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
 
 .btn {
   background: #E6B31E;
@@ -138,6 +137,16 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
+#story-entry .btn{
+    transition: none;
+}
+
+#story-entry .btn:hover{
+    transform: none;
+    color: #212529;
+}
+
+
 
 /* FOOTER Section */
 
@@ -146,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-link {
-  color: #343434;
+  color: #CACACA;
   /* font-family: 'Montserrat', sans-serif; */
   margin: 10px 20px;
   text-decoration: none;
@@ -191,6 +200,17 @@ h1, h2, h3, h4, h5, h6 {
 .art-disclaimer {
   text-align: left;
   font-size: 0.8rem;
+}
+
+
+.story-container {
+  padding: 1% 15% 7%;
+}
+
+.stories-text {
+  font-size: 0.8rem;
+  color: #E6B31E;
+  text-align: right;
 }
 
 
