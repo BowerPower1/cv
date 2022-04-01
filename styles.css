@@ -1,0 +1,227 @@
+body {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  color: #E6B31E;
+}
+
+
+/*CONTAINERS*/
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+/*SECTIONS*/
+.coloured-section{
+  background-color: #343434;
+  color: #CACACA;
+}
+
+.grey-section{
+  background-color: #CACACA;
+}
+
+
+/*HEADINGS*/
+.big-heading{
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+}
+
+.title-heading {
+  font-size: 2rem;
+  font-weight: 400:
+  /* font-family: 'Sacramento', cursive; */
+}
+
+.title-sub{
+  font-size: 1.5rem;
+  /* font-family: 'Sacramento', cursive; */
+}
+
+
+/*Navigation Bar*/
+
+.navbar{
+  padding: 0 0 2.5rem 0;
+}
+
+/* .navbar-brand{
+  font-size: 2.5rem;
+  font-weight: 900;
+} */
+
+.nav-item, .footer-icon{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+
+/* TITLE Section */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+
+.garry-profile-pic {
+  width:70%;
+  transition: transform .2s;
+}
+
+.garry-profile-pic:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+/* LIFE Section */
+.carousel-item{
+    text-align: left;
+}
+
+.life-pic-left, .life-pic-right {
+  width: 40%;
+  max-height: 40%;
+  transition: transform .2s;
+}
+
+.life-pic-left {
+  float: left;
+  margin-right: 30px;
+}
+
+.life-pic-right {
+  float: right;
+  margin-left: 30px;
+}
+
+.life-pic-left:hover, .life-pic-right:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+
+/* DONATE and Stories Sections */
+.donate-title, .stories-title {
+  font-size: 3.5rem;
+  margin-bottom: 4%;
+}
+
+.donate-message, .stories-message {
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.btn {
+  background: #E6B31E;
+  transition: transform .2s;
+  margin-top: 3%;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.btn:hover {
+  color: #EAF6F6;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+#story-entry .btn{
+    transition: none;
+}
+
+#story-entry .btn:hover{
+    transform: none;
+    color: #212529;
+}
+
+
+
+/* FOOTER Section */
+
+.bottom-container {
+  padding: 50px 0 20px;
+}
+
+.footer-link {
+  color: #CACACA;
+  /* font-family: 'Montserrat', sans-serif; */
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #EAF6F6;
+}
+
+.copyright {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+/*GALLERY Page(s)*/
+
+#title-gallery .container-fluid{
+  padding: 3% 15% 1%;
+}
+
+#gallery{
+  padding: 20px 100px 50px;
+}
+
+.gallery-column{
+  padding: 3% 2%;
+}
+
+.gallery-img{
+  width: 100%;
+  height: auto;
+  transition: transform .2s;
+}
+
+.gallery-img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.art-disclaimer {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+
+.story-container {
+  padding: 1% 15% 7%;
+}
+
+.stories-text {
+  font-size: 0.8rem;
+  color: #E6B31E;
+  text-align: right;
+}
+
+
+@media (max-width: 1028px) {
+
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
